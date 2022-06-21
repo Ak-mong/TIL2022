@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch_case</title>
+</head>
+<body>
+    <script>
+        const ivalue = Number(prompt("숫자를 입력하세요","0~100")) //prompt로 받은것은 문자형 -> Number로 숫자로 바꿔줌
+        switch(ivalue%2){
+            case 0:
+            alert("짝수입니다.")
+            break;
+            case 1:
+            alert("홀수입니다.")
+            break;
+            default:
+            alert("숫자가 아닌거 같습니다.")
+            break;
+        }
+
+        switch(true){
+            case hours<11:
+            alert("아침식사")
+            break;
+            case hour>15:
+            alert("점심식사")
+        }
+    </script>
+</body>
+</html>
+switch(값 or 조건문){
+    case 조건:
+    실행문
+    break;
+    case 조건:
+    실행문
+    break;
+    case 조건:
+    실행문
+    break;
+}

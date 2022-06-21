@@ -1,0 +1,41 @@
+<html>
+    <body>
+        <h1>function</h1>
+        <script>
+            function abc(){
+                console.log('a');
+                console.log('b');
+                console.log('c');
+            }
+            console.log(1);
+            console.log(2);
+            abc();
+            console.log(3);
+            abc();
+            console.log(4);
+            
+        </script>
+        <h1>vat</h1>
+        <script>
+            function 부가세계산(가격, 부가세율){ //매개변수, parmeter
+                
+                //let 가격 = 1000;
+                //let 부가세율 = 0.1;
+                let 부가세 = 가격*부가세율;
+                return 부가세; //retrun : 함수의 종료 조건, 기능을 하나로 제한하는것=범용성이 높아짐
+                //console.log(부가세);
+            }
+            console.log(1);
+            console.log(2);
+            console.log(부가세계산(2000,0.1)); //인자, argument, 입력값
+            console.log(3);
+        </script>
+        <h1>SUM</h1>
+        <script>
+            function sum(val1,val2){
+                return val1+val2;
+            }
+            alert(sum(100,200)*10)
+        </script>
+    </body>
+</html>

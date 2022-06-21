@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>웹이에요.</title>
+    <meta charset="utf-8">
+       <style>
+        #container{
+             display:grid;
+             grid-template-columns: 200px 1fr;
+         }
+ 
+         @media all and (min-width: 900px){ 
+             body{
+                 background-color:rgb(193, 233, 193);
+             }
+         }
+         
+         @media all and (max-width: 900px) {
+             body{
+                 background-color:rgb(231, 193, 193);
+             }
+         }
+         body{font-family: 'Smokum', cursive;} /*body,h1 등 적용하고 싶은 부분{} 넣기*/
+     </style>
+<style>
+    h1{
+        border-bottom: 10px solid rgba(255, 192, 203, 0.589);
+        padding-bottom: 10px;
+        color: aquamarine;
+        font-size: 30px;
+        font-family: 'Ubuntu', sans-serif;
+    }
+    #a{
+        display: grid;
+        grid-template-columns: 400px 1fr;
+    }
+    img{
+        padding-left:32px;
+    }
+    li{
+        font-family: 'Ubuntu', sans-serif;
+        font-size: 20px;
+    }
+    body{font-family: 'Smokum', cursive;}
+    a{font-family: 'smokum', cursive; text-decoration:none}
+</style>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-3ML4Z9MF21"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-3ML4Z9MF21');
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Smokum&display=swap" rel="stylesheet">
+
+    </head>
+
+<body>
+    <h1><a href="index1.html">Hello everyone.</a></h1>
+    <h2>LIST</h2>
+    <div id="a">
+        <ol> <!--ordered list  ul=unordered -->
+            <li><a href="1.html">html</a></li>
+             <li><a href="2.html">css</a></li>
+             <li><a href="3.html">javaScript</a></li>
+        </ol>
+    
+
+        <div><li> <b>WWW</b> is <u>World</u> <strong>wide</strong> web </li>   
+   
+            <img src="https://images.unsplash.com/photo-1462275646964-a0e3386b89fa?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8c3ByaW5nfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" width=""300">
+        </div>
+    </div>
+    <!-- <li>닫을 필요가 있는 태그는 /가 존재 </li> 
+    속성 attribute (ex) width)
+    strong 태그가 bold보다 최근에 나온 태그 strong는 의미론적으로 강조가 투영-->
+<div id="disqus_thread"></div>
+
+
+    <input type="button" value="Dark" onclick="
+        document.querySelector('body').style.backgroundColor ='black';
+        document.querySelector('body').style.color='white';
+        ">
+    <input type="button" value="White" onclick="
+    document.querySelector('body').style.backgroundColor ='white';
+    document.querySelector('body').style.color='black';
+    ">
+</body>
+</html>

@@ -1,0 +1,53 @@
+@charset "utf-8";
+*{
+    margin:0;
+    padding:0;
+}
+h1{
+    width:100%;
+    height:150px;
+    font-size: 20px;
+    line-height:150px; /*h1텍스트 y축 가운데 정렬*/
+    padding-left:50px;
+    background: url("../images/img6.jpg") no-repeat left top;
+    background-size:cover;
+    color:#fff;
+}
+#wrapper{
+    display:grid; /*grid, grid-inilne*/
+    grid-template-columns: 200px 200px; /*repeat(2,200px)*/
+    grid-template-rows: minmax(220px auto);/*최소 220, 최대는 자동*/
+    grid-gap: 10px 10px;
+    justify-content: center;
+}
+#colums{
+    column-count:2; /*한 줄에 두개를 보이게 하겠다.*/
+    column-gap:10px;
+}
+.card{
+    display:inline-block;
+    width: 200px;
+    background-color:#fff;
+    box-shadow:0 1px 1px #ccc;
+}
+.card img{
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+    padding-bottom:15px;
+    margin-bottom:5px;
+}
+.card p{
+    padding:10px;
+}
+@media(min-width: 900px){
+    #columns{
+        justify-content: center;
+        grid-template-columns: repeat(3,200px);
+    }
+}
+@media(min-width: 1100px){
+    #columns{
+        justify-content: center;
+        grid-template-columns: repeat(4,200px);
+    }
+}

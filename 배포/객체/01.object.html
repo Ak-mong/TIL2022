@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>사용자 정의 객체</title>
+	<link rel="stylesheet" href="css/obj.css">
+</head>
+<body>
+	<div id="display"></div>
+	
+	<script>
+		var toyRobot = {
+			productId:"123-12",
+			name : "Robot",
+			price:2000,
+			auantity:10,
+			showStock:function(){
+				document.querySelector('#display').innerHTML = this.name+"제품은"+this.quantity +"개 남았습니다.";
+			},
+			showPrice: function(){
+				//제품의 가격은 XXX입니다.
+				document.querySelector('#display').innerHTML = this.name+"제품은"+this.price +"개 남았습니다.";
+			}
+		}
+		toyRobot.showStock();
+		toyRobot.showPrice();
+	</script>
+</body>
+</html>

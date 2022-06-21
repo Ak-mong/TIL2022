@@ -1,0 +1,35 @@
+header {
+	padding: 10px;
+	overflow: hidden;
+}
+header h1{
+	float:left;	
+    margin-left: 2%;
+}
+
+header nav {
+	width:60%;
+	float:right;	
+}
+
+nav ul li{
+	float: left;
+}
+
+
+section{
+	overflow:hidden;
+}
+article h2{
+    background-image:url('https://cdn-icons-png.flaticon.com/512/6421/6421095.png');
+	padding-left:30px;
+}
+aside{
+	clear:both;
+	height:auto;
+	padding:10px;
+}
+footer{
+	clear:both;
+	padding:10px;
+}

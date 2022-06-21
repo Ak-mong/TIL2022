@@ -1,0 +1,31 @@
+<!-- alert(); 알림창
+Math.random() 0~1사이의 임의의 값 나옴
+            *100 하면 0~100의 임의의 숫자
+ alert(1);alert(2);alert(3); 1,2,3 순서대로 확인
+ confirm() 대답에 따라 예, 아니오(true false)
+ 
+ html은 정보다
+ css는 디자인이다.
+ javascript는 사용자와 상호작용
+ document.querySelector(); 쿼리 전체를 선택하는것
+ ex)document.querySelector('body').style.backgroundColor = 'black';
+  다크모드
+-->
+<Html>
+    <body>
+        <script>
+            console.log(1); //console창에만 값이 나옴
+            console.log(2);
+            console.log(3);
+            
+        </script>
+        1+1 <br>
+        <script>
+            document.write(1+1);  //실행한 값을 문서에 쓰는것
+            document.write('<br>');
+            document.write(Math.random());
+        </script>
+        <input type="button" value="hello" onclick="alert('hello');"> 
+        <!--onclicck의 속성은 자바스크립트가 온다-->
+    </body>
+</Html>

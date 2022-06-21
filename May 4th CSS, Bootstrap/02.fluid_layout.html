@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <title>CSS</title>
+    <style>
+        /* 940px이 100%로 하면 (요소의 너비/콘텐츠 전체를 감싸는 요소의 너비)* 100
+            소수점 이하 3~4자리 표시함 
+            가능하면 마진, 패딩도 백분율로 하면 자연스러움  */
+      #jb-container {
+        /* width: 940px;   */
+        width:94%; /* 전체 940px을 백분율로 변환 */
+        margin: 0 auto;
+        /* padding: 20px; */
+        padding: 2.1276%;
+        border: 1px solid #bcbcbc;
+      }
+      #jb-header {
+        /* padding: 20px;
+        margin-bottom: 20px; */
+        padding: 2.1276%;
+        margin-bottom:2.1276%;
+        border: 1px solid #bcbcbc;
+      }
+      #jb-sidebar-left {
+        /* width: 160px; */
+        width: 17.0212%;
+        /* padding: 20px;
+        margin-right: 20px;
+        margin-bottom: 20px; */
+        padding: 2.1276%;
+        margin-right: 2.1276%;
+        margin-bottom: 2.1276%;
+        float: left;
+        border: 1px solid #bcbcbc;
+      }
+      #jb-content {
+        /* width: 450px;
+        padding: 20px;
+        margin-bottom: 20px;*/ 
+        width: 47.8723%;
+        padding: 2.1276%;
+        margin-bottom: 2.1276%;
+        float: left;
+        border: 1px solid #bcbcbc;
+      }
+      #jb-sidebar-right {
+        /* width: 160px;
+        padding: 20px;
+        margin-bottom: 20px; */
+        width: 17.0212%;
+        padding: 2.1276%;
+        margin-bottom: 2.1276%;
+        float: right;
+        border: 1px solid #bcbcbc;
+      }
+      #jb-footer {
+        clear: both;
+        /* padding: 20px; */
+        padding: 2.1276%;
+        border: 1px solid #bcbcbc;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="jb-container">
+      <header id="jb-header">
+        <h1>3-Column Layout</h1>
+      </header>
+      <aside id="jb-sidebar-left">
+        <h2>Sidebar</h2>
+        <ul>
+          <li>Lorem</li>
+          <li>Ipsum</li>
+          <li>Dolor</li>
+        </ul>
+    </aside>
+      <article id="jb-content">
+        <h2>Content</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nec mollis nulla. Phasellus lacinia tempus mauris eu laoreet. Proin gravida velit dictum dui consequat malesuada. Aenean et nibh eu purus scelerisque aliquet nec non justo. Aliquam vitae aliquet ipsum. Etiam condimentum varius purus ut ultricies. Mauris id odio pretium, sollicitudin sapien eget, adipiscing risus.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nec mollis nulla. Phasellus lacinia tempus mauris eu laoreet. Proin gravida velit dictum dui consequat malesuada. Aenean et nibh eu purus scelerisque aliquet nec non justo. Aliquam vitae aliquet ipsum. Etiam condimentum varius purus ut ultricies. Mauris id odio pretium, sollicitudin sapien eget, adipiscing risus.</p>
+      </article>
+      <aside id="jb-sidebar-right">
+        <h2>Sidebar</h2>
+        <ul>
+          <li>Lorem</li>
+          <li>Ipsum</li>
+          <li>Dolor</li>
+        </ul>
+    </aside>
+      <footer id="jb-footer">
+        <p>Copyright</p>
+      </footer>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2단레이아웃</title>
+</head>
+<style>
+    #container{
+        margin: 0 auto;
+        padding:0;
+    }
+    #header{
+        width:100%;
+        height: 100px;
+        background-color: brown;
+    }
+    #sidebar1{
+        width: 200px;
+        height: 500px;
+        background-color: aquamarine;
+        float: left;
+    }
+    #contents{
+        width:800px;
+        height: 500px;
+        background-color: blue;
+        float:left;
+    }
+    #sidebar{
+        width: 200px;
+        height: 500px;
+        background-color: aquamarine;
+        float: right;
+    }
+    .clearfix{clear:both;}
+    #footer{
+        width: 100%;
+        height: 100px;
+        background-color: brown;
+
+    }
+</style>
+<body id="'container">
+    <header id="header">
+        <h1>사이트 제목</h1>    </header>
+        <aside id="sidebar1">
+            <h2> 사이드 바</h2>
+            <ul>
+                <li>사이드바1</li>
+                <li>사이드바2</li>
+                <li>사이드바3</li>
+            </ul>
+        </aside>
+    <section id="contents">
+        <h2>본문</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia nulla expedita ex architecto dicta possimus iste, deleniti omnis cumque tempora nihil! Ullam ut fuga, fugit delectus itaque sequi impedit minus?</p>
+    </section>
+    <aside id="sidebar">
+        <h2> 사이드 바</h2>
+        <ul>
+            <li>사이드바1</li>
+            <li>사이드바2</li>
+            <li>사이드바3</li>
+        </ul>
+    </aside>
+    <div class="clearfix"></div>
+    <footer id="footer">
+        <h2>푸터</h2>
+        <p>푸터 내용 &copy;</p>
+    </footer>
+
+</body>
+</html>

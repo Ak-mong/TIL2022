@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>emit</title>
+    <style>
+        :root{
+            --number:500;
+        }
+        div{background:#0bd;
+        height: calc(100vh - 100px);
+        width: calc(var(--number)*1px);
+        padding: 16px;}
+        p{
+            /* --number: 500; */
+            width: calc(var(--number)*1px);
+            background-color:red;
+            padding:16px;
+        }
+    </style>
+</head>
+<body>
+    <p></p>
+    <p class="text"></p>
+    <p id="text"></p>
+    <p> 태그 내의 컨텐츠</p>
+    <div></div>
+    <p></p>
+</body>
+</html>

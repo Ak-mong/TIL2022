@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- button 만들기
+    <input type="" button | reset | submit | image >
+    <button type="" button | reset | submit >
+    -->
+    <input type="button" onclick="alert('그냥 input 버튼')" value="그냥 input버튼">
+    <button type="button" onclick="alert('그냥 button 버튼')" > 그냥 button 버튼</button>
+
+    <!-- reset 버튼: 폼에 입력된 내용을 지우고 초기화하는 버튼 -->
+<form>
+    아이디: <input type="text">
+    <input type="reset" value="입력한 내용 지우기">
+    <button type="reset">[button}입력한 애용 지우기 </button>
+</form>
+<!-- submit 버튼: 클릭하면 웹 브라우저가 폼 데이터를 웹 서버로 전송 -->
+<form action="" method="">
+    아이디: <input type="text">
+    <input type="submit" value="[input]전송]">
+    <button type="submit">[button}전송 </button>
+</form>
+<!-- image 버튼 : 아무 기능 없음. 자바 스크립트 코드로 활용 -->
+<input type="image" src="https://w.namu.la/s/69194677bfdc72cfe00e7e82d910b797f3ec9c9a8b1de53747e2ca94817a9d2f2fefd9620b620492487ef9d72aae8471a9c7dc4134d36655320017a4145f0e51c57e5abfadbf14ebf9509b7e683449a1da6679c03a861c1cd5aee446cd2881173971aa56f985500489e65ac3833e3ef6">
+<button type="image">
+    <img src="https://w.namu.la/s/69194677bfdc72cfe00e7e82d910b797f3ec9c9a8b1de53747e2ca94817a9d2f2fefd9620b620492487ef9d72aae8471a9c7dc4134d36655320017a4145f0e51c57e5abfadbf14ebf9509b7e683449a1da6679c03a861c1cd5aee446cd2881173971aa56f985500489e65ac3833e3ef6"
+</button>
+<!-- <input> <button> 왜 같이 쓰냐?
+    input이 먼저 만들어짐
+1) <button>은 자식태그를 가질 수 있다.
+2) <button>은 css에서 가상 선택자로 꾸며 줄 수 있다.
+    ->input 의 한계를 넘어 다양한 표현이 가능하다.    
+-->
+<!-- type을 제대로 설정하지않으면 이상하게 동작하게 된다. -->
+<form action="" method="">
+    아이디: <input type="text">
+    <!-- <input type="submit" value="아이디 중복확인"> 잘못된 부분 -->
+    <input type="submit" value="아이디 중복확인">
+</form>
+
+</body>
+</html>

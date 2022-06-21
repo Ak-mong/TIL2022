@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이재빈</title>
+</head>
+<body>
+    
+    <script>
+        //1번
+    document.write("1번<br>")    
+        let a = ""
+        for(let i=9;i>0;i--){
+            for(let j=0;j<i;j++){
+                a +="*"
+            }
+            a +="<br>"
+        }
+        document.write(a)
+        
+        //2번
+    document.write("2번<br>")    
+        let b = "&nbsp"
+        for(let i=1;i<6;i++){
+            for(let j=0;j<i;j++){
+                b += "*"
+            }
+            b += "<br>&nbsp"   
+        }
+        document.write(b)
+        
+        //3번 본문창에 띄울수가없음
+        document.write("3번 console창<br>")  
+        for(let q =0; q<7; q++){
+            let c = ""
+            for(let w=10; w>q; w--){
+                    c+=" ";
+            }
+            for(let z=0; z<2*q-1; z++){
+                c+="*"
+            }
+                c += "";
+        console.log(c)
+        }
+       //4번
+       document.write("4번")
+          
+     function f(year){
+    var year = prompt("년도를 입력하세요","2022")
+    if(year%400 == 0){
+        alert(`${year}는 윤년입니다.`)
+    }
+    else if(year%100==0){
+        alert(`${year}는 윤년이 아닙니다.`)
+    }
+    else if(year%4==0){
+        alert(`${year}는 윤년입니다.`)
+    }
+    else{
+        alert(`${year}는 윤년이 아닙니다.`)
+    }
+   }
+ f()
+    </script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <!-- 선택자, 모든 li 태그에 모두 적용(포괄적)-->
+        <!-- 클래스, em은 선택자가 될수 없음 그래서 앞에 . 을 붙임
+                        .em이 구체적이다=우선순위 높음 -->
+         <!-- id는 단 하나의 항목에만 쓰기 때문에 class보다 더 구체적-->
+        <style>
+            li{   
+                color:red;
+                text-decoration: underline;
+            }
+            .em{   
+                color:green;
+            } 
+            
+            #vip{   
+                color:blue;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <h1 class="em">css Syntax</h1> <!--em은 아무것도아니고 class는 중요-->
+        <ol>
+            (<li class="em" id="vip"> item</li>
+            (<li> item</li>
+            (<li> item</li>
+          <!--  <font color="red"></font>
+            <li>item</li>
+            <li>item</li>
+            <li>item</li> -->
+        </ol>
+    </body>
+</html>

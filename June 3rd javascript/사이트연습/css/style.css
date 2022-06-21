@@ -1,0 +1,324 @@
+/* import 구문은 항상 CSS 파일의 맨 윗줄에 작성  */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Varela+Round&display=swap');
+
+
+/* header css */
+.container{
+    width:1140px;
+    margin:0 auto;
+}
+
+/* 스크롤 내리더라도 헤더 상단 고정 */
+header{
+    position: fixed;
+    color:white;
+    top:0;
+    z-index:1;
+    width:100%;
+    padding:1rem;
+}
+
+header .container{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+header nav ul{
+    display: flex; /*메뉴 가로 배치*/
+}
+
+header nav ul li{
+    padding: 10px;
+}
+
+header button{
+    background: transparent;
+    border:0;
+    cursor:pointer;
+}
+
+header h1 button{ /*로고*/
+    font-size:2rem;
+    font-weight:bold;
+}
+
+header nav ul li button{
+    font-size:1.2rem;
+}
+
+
+
+/* main css*/
+main{
+    width: 100%;
+    height:100vh;
+    background:linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('../images/me.jpg') center center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+main h4{ /*중요도때문에 h4를 먼저 씀*/
+    font-size:2rem;
+}
+main h2{
+    font-size: 3.5rem;
+    margin:2rem 0;
+    letter-spacing: 3px;
+    font-family: 'Varela Round', sans-serif;
+}
+main p{
+    max-width: 500px;
+    margin: 0 auto;
+    font-size:1.24rem;
+}
+
+main button.download{
+    background-color: transparent;
+    color: white;
+    border : 3px solid white;
+    padding: 1rem 2rem;
+    border-radius: 20px;
+    margin-top: 3rem;
+    font-weight: bold;
+    cursor:pointer;
+}
+
+/* 아이콘 폰트로 추가한 마우스 모양의 버튼에 스타일 속성 추가, 애니메이션 추가 */
+main button.mouse{
+    background-color:transparent;
+  border:none;
+  color:white;
+  font-size:2rem;
+  position:absolute;
+  bottom:1rem;
+  left:50%;
+  transform:translateX(-50%);
+  animation:upDown 1s ease-in-out infinite;
+  cursor:pointer;
+}
+
+@keyframes upDown{
+    0%{bottom:1rem;}
+    50%{bottom:1.5rem;}
+    100%{bottom:1rem;}
+}
+
+main h2 span:after{
+    content:"";
+    height:40px;
+    width: 3px;
+    background-color: white;
+    display:inline-block;
+    animation: blink 0.9s ease-in-out infinite;
+}
+@keyframes blink{
+    0%{opacity:1;}
+    100%{opacity:0;}
+}
+
+
+
+/* about me css */
+/* 전체 글꼴, 배경색 */
+section{
+    font-family: 'Poppins',sans-serif;
+    padding: 5rem 0;
+}
+section:nth-child(2n){
+    background-color: #f8f8f8;
+}
+/* 세션의 제목 영역 */
+section .title{
+    margin-bottom: 3rem;
+}
+section .title h4{
+    font-size: 1.35rem;
+    color: #ed4848;
+    position: relative;
+}
+section .title h2{
+    font-size: 3.5rem;
+}
+section .title p{
+    font-size: 1.15rem;
+}
+
+/* about-self 클래스 안에서 left, right 클래스 구성 width:50% */
+section .about-self:after{
+    content:"";
+    clear:both;
+    display:block;
+}
+section .about-self .left{
+    width:50%;
+    float: left;
+}
+section .about-self .left img{
+    max-width: 100%;
+}
+section .about-self .right{
+    width:50%;
+    float:left;
+    padding: 0 2rem;
+}
+section .about-self .right h3{
+    font-size: 2.25rem;
+    margin-bottom: 1rem;
+}
+section .about-self .right h3 strong{
+    color: #ed4848;
+}
+section .about-self .right p{
+    font-size: 1.15rem;
+    margin : 1rem 0;
+}
+
+section .about-self .right .social a{
+    font-size: 2.5rem;
+    margin-right: 0.2rem;
+}
+
+/* what i do css */
+section .do-me::after{
+    content: "";
+    clear: both;
+    display: block;
+}
+section .do-me .do-inner{
+    background-color:#fff;
+    width:30%;
+    padding:2rem; 
+    float:left;
+    margin-right:5%;
+    cursor:pointer;
+  }
+section .do-me .do-inner:last-child{
+    margin-right:0;
+}
+section .do-me .do-inner .icon i{
+    font-size: 2.5ren;
+    color:#ff6a6a;
+}
+section .co-me .do-inner .content h3{
+    font-size:2rem;
+    margin:1rem 0;
+}
+section .do-me .do-inner:hover{
+    background-color: lightcoral;
+    color:white;
+}
+section .do-me .do-inner:hover i{
+    color: white;
+}
+
+/* background image 고정  */
+.bg{
+    background: url("../images/background.jpg") center center;
+    background-size:cover;
+    background-attachment: fixed;
+    height: 650px;
+}
+
+/* portfolio css */
+section.portfolio::after{
+    content:"";
+    clear:both;
+    display: block;
+}
+/* 사각형 꾸미기 */
+section.portfolio .portfolio-inner{
+    width: 30%;
+    margin-right:5%;
+    padding: 1rem 1rem 1.5rem 1rem;
+    float: left;
+    background-color:#f8f8f8;
+    border: 1px solid #ccc;
+    margin-bottom:3rem;
+}
+section.portfolio .portfolio-inner:nth-child(3n){
+    width: 100%;
+    display:block;
+}
+section.portfolio .potfolio-inner strong{
+    color:#ff6a6a;
+    margin:0.5rem 0;
+    display:block;
+}
+section.portfolio .portfolio-inner h3{
+    font-size: 1.75rem;
+}
+
+/* contact with me css */
+section.contact::after{
+    content:"";
+    clear:both;
+    display: block;
+}
+section.contact .contact-me .left{
+    width: 30%;
+    float:left;
+}
+section.contact .contact-me .right{
+    width: 65%;
+    float:left;
+    margin-left:5%;
+    margin-bottom: 2rem;
+    border: 1px solid #ccc;
+    padding:1rem;
+}
+
+/* left ->card */
+section.contact .contact-me .left .card{
+    border : 1px solid #ccc;
+    padding: 1rem;
+    display:flex;
+    align-items:center;
+    margin-bottom:1.25rem;
+}
+section.contact .contact-me .left .card .icon i{
+    font-size:2rem;
+    margin-right:5px;
+}
+
+section.contact .contact-me .right .form-group{
+    margin-bottom: 1.25rem;
+}
+section.contact .contact-me .right .form-group label{
+    display: block;
+    margin-bottom: 0.85rem;
+}
+section.contact .contact-me .right .form-group input{
+    padding: 0.625rem;
+    width:65%;
+    outline:none;
+    border:1px solid #ccc;
+    border-radius:10px;
+}
+section.contact .contact-me .right .form-group input:focus{
+    border: 1px solid #719ECE;
+    box-shadow: 0 0 10px #719ECE;
+}
+section.contact .contact-me .right .form-group textarea{
+    height: 300px;
+    width: 100%;
+    resize: none;
+    border: 1px solid #ccc;
+    border-radius : 10px;
+}
+section.contact .contact-me .right .form-group textarea:focus{
+    outline:none;
+    border: 1px solid #719ECE;
+    box-shadow: 0 0 10px #719ECE;
+}
+section.contact .contact-me .right button{
+    width: 100%;
+    padding: 1rem;
+    background-color: #f78b0090;
+    border: none;
+    color: white;
+}
