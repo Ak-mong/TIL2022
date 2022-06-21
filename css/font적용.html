@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://hangeul.pstatic.net/hangeul_static/css/maru-buri.css" rel="stylesheet">
+    <style>
+    /* 1. font-family 속성으로 지정 */
+          /* body{font-family: '궁서체 보통', 돋움, serif;} */
+
+    /* 2. web font 지정 
+    *.ttf: 용량이 큼 = 웹에서 잘 안 쓰임 format('truetype') 4
+    *.eot           format 안적음, 우선순위 1
+    *.woff           format('woff')         2
+    *.woff2         format('woff2')         3
+    구글 웹 폰트 : https://fonts.google.com/
+    네이버 웹 폰트 : https://hangeul.naver.com/font
+    눈누 : https://noonnu.cc/
+    */
+    @import url('https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&display=swap');   
+    .gfont{font-family: 'Nanum Brush Script', cursive;}
+    .nfont{font-family: 'MaruBuriExtraLight';}
+
+    /* 3. @font-face : 가지고 있는 글꼴 */
+    @font-face{ font-family: EastSeaDokdo-Regular;
+              src:url('./font/NanumBrushScript-Regular.eot');
+              src:url('./font/NanumBrushScript-Regular.woff') format('woff');
+              src:url('./font/NanumBrushScript-Regular.ttf') format('truetype');
+}
+.ffont{font-family: EastSeaDokdo-Regular, cursive;}
+    /* 4. 웹 안전 글꼴 
+    영어: https://www.w3schools.com/css/css_font_websafe.asp
+    한글 웹 안전글꼴
+    - 가변폭 : 굴림(Gulim), 돋움(Dotum), 바탕(Batang), 궁서(Gungsuh) 폰트크게에 따라 간격 변화
+    - 고정폭 : 굴림체(GulimChe), 돋움체(DotumChe), 바탕체(BatangChe), 궁서체(GungsuhChe) 글자간 간격이 동일
+    */
+    </style>
+</head>
+<body>
+    <h3 class="gfont"> font 속성 정하기</h3>
+    <p class="nfont">1. font-family 속성으로 지정</p>
+    <p class="ffont">@font_face: 다운로드한 글꼴</p>
+</body>
+</html>

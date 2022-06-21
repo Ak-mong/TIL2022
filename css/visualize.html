@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 선형: 색상이 수직, 수평, 대각선 방향으로 일정하게 변하는 것
+    linear0gradient(<각도> to <방향>, color-stop[, color-stop, ..])
+    to top: 아래 -> 위
+    to left: 오-> 왼
+    to right : 왼 -> 오
+    to bottom : 위 -> 아래
+-->
+<style>
+    div{width:500px; height: 300px; border-radius: 10px;}
+    .grad1{background: linear-gradient(to right, blue, white);}
+    .grad2{background: linear-gradient(450deg, blue, white);}
+    .grad3{background: linear-gradient(to bottom, blue, white 30%, blue, rgba(238, 9, 9, 0.5)90%);}
+    
+    /* radial-gradient (<최종모양><크기>at<위치>, color-stop[, color-stop, ..])
+                    circle | ellipse         10% 10%         
+                    디폴트 값 타원형*/
+    .grad4{ background: radial-gradient(circle, white, tellow, blue);}
+
+    /* closest-side, closest-corner, farthest-side, farthest-corner */
+    .grad5{background : radial-gradient(circle closest-side at 30% 40%, white, blue );}
+</style>
+</head>
+<body>
+    <div class="grad1"></div>
+    <div class="grad2"></div>
+    <div class="grad3"></div>
+    <div class="grad4"></div>
+    <div class="grad5"></div>
+</body>
+</html>
