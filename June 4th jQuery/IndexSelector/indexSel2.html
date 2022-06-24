@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+	$(function(){
+		$("p:gt(0)").css("background-color","yellow");
+		$("p:lt(7)").css("color","green");
+		$("p:nth-last-child(1)").css("font-size","30px")
+		$("p:nth-last-of-type(1)").css("font-style","italic");
+	});
+</script>
+</head>
+<body>
+	<div>
+		<p>p태그</p>
+		<p>p태그</p>
+		<p>p태그</p>
+	</div>
+	<hr>
+	<div>
+		<p>p태그</p>
+		<p>p태그</p>
+		<p>p태그</p>
+	</div>
+	<hr>
+	<div>
+		
+		<p>p태그</p>
+		<p>p태그</p>
+		<div>div태그</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+window.onload=function(){
+	var result = document.getElementById("result");
+	result.innerHTML += "on load1<br>";
+}
+window.onload=function(){
+	var result = document.getElementById("result");
+	result.innerHTML += "on load2<br>";
+}
+window.onload=function(){
+	var result = document.getElementById("result");
+	result.innerHTML += "on load3<br>";
+}
+</script>
+
+</head>
+<body>
+	<div id="result"></div>
+</body>
+</html>
