@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React, {Component} from 'react'; //{Fragement} 포함됬다가 빠짐
 import Button from "./components/Button";
 import Title from "./components/Title";
 import Message from "./components/Message";
