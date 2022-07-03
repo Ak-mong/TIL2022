@@ -7,7 +7,7 @@ import WeatherBox from './components/WeatherBox';
 import { ClipLoader } from 'react-spinners';
 
 const cities = ['paris', 'new york', 'tokyo', 'seoul'];
-const API_KEY = 'c9b7fad4b828380e3c4ce3d22f44bd08';
+const API_KEY = '';
 
 const App = () => {
   const [loading, setLoading] = useState(false); //로딩 정보, useState로 초기값 false를 준다, 데이터를 가져올때 로딩이 실행되야한다.
